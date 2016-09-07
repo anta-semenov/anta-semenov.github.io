@@ -54,7 +54,7 @@ module.exports = {
       },
       {
         test: /\.(jpg|png|gif|eot|svg|ttf|woff|woff2)(\?.*)?$/,
-        include: [path.join(__dirname, 'src')],
+        include: [path.join(__dirname, 'src'), path.join(__dirname, 'node_modules')],
         loader: 'file',
         query: {name: 'images/[name].[ext]'}
       },
@@ -70,7 +70,7 @@ module.exports = {
       {
         test: /\.less/,
         loader: ExtractTextPlugin.extract('css!postcss!less'),
-        include: path.join(__dirname, 'src')
+        include: [path.join(__dirname, 'src'), path.join(__dirname, 'node_modules')]
       }
     ]
   },
