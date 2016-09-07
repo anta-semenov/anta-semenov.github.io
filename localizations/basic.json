@@ -1,6 +1,7 @@
 {
   "%about": "I'm Antony Semenov, web and mobile developer. Passionated about creating simple and useful interfaces and apps. Don't hesistate to ",
   "%mailLink": "drop me a line",
+  "%examples": "Examples",
   "%gitHubLink": "View it on GitHub",
   "%tryItLink": "Try it",
 
@@ -13,7 +14,7 @@
   "%currencyCalc.TaskLink": "Task specification (in Russian)",
 
   "%todo.Description": "Todo app that was insired by GTD. I use it for my own projects.",
-  "%todo.Description2": "There were used a range of technologies for making this app nice looking and useful. React, Redux, React-Router, React DnD, React Motion, Draft.js, Firebase",
+  "%todo.Description2": "There were used a range of technologies for making this app nice looking and useful. React, Redux, React-Router, React DnD, React Motion, Draft.js, Firebase.",
   "%todo.MaxSite.Title": "If you like design of this app, ",
   "%todo.MaxSite.Link": "there's an author"
 }

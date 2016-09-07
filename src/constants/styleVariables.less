@@ -1,9 +1,12 @@
 //Colors
+@color-acsent: #4cb0da;
+@color-link: #ffffff;
+@color-link-hover: @color-acsent;
 
 //Font Sizes
-@font-size-small: 10px;
-@font-size-basic: 12px;
-@font-size-large: 14px;
+@font-size-small: 14px;
+@font-size-basic: 16px;
+@font-size-large: 20px;
 @font-size-header: 20px;
 
 //Font weight
@@ -12,3 +15,17 @@
 @font-weight-bold: 600;
 
 //Sizes
+
+//Mixins
+.link(@color: @color-acsent) {
+  color: @color;
+  font-weight: @font-weight-medium;
+  text-decoration: none;
+  display: inline;
+  opacity: 0.6;
+  transition: opacity 200ms;
+
+  &:hover {
+    opacity: 1;
+  }
+}

@@ -5,7 +5,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   devtool: 'eval',
   entry: [
-    'webpack-dev-server/client?http://0.0.0.0:3001',
+    'webpack-dev-server/client?http://0.0.0.0:3002',
     'webpack/hot/only-dev-server',
     './src/index'
   ],
@@ -24,13 +24,28 @@ module.exports = {
   module: {
     loaders: [{
       test: /\.js$/,
-      loaders: ['react-hot', 'babel'],
+      loaders: ['babel'],
       include: path.join(__dirname, 'src')
+    },
+    {
+      test: /\.(jpg|png|gif|eot|svg|ttf|woff|woff2)(\?.*)?$/,
+      include: [path.join(__dirname, 'src'), path.join(__dirname, 'node_modules')],
+      loader: 'file',
+      query: {name: 'media/[name].[ext]'}
+    },
+    {
+      test: /\.(mp4|webm|pdf)(\?.*)?$/,
+      include: path.join(__dirname, 'src'),
+      loader: 'url',
+      query: {
+        limit: 10000,
+        name: 'media/[name].[ext]'
+      }
     },
     {
       test: /\.less$/,
       loader: 'style-loader!css-loader!postcss-loader!less-loader',
-      include: path.join(__dirname, 'src')
+      include: [path.join(__dirname, 'src'), path.join(__dirname, 'node_modules')]
     }],
     postcss: function () {
       return [require('autoprefixer')];

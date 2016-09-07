@@ -14,7 +14,8 @@
     "l10n": "^0.2.4",
     "react": "^15.3.1",
     "react-dom": "^15.3.1",
-    "react-slick": "^0.13.6"
+    "react-slick": "^0.13.6",
+    "slick-carousel": "^1.6.0"
   },
   "devDependencies": {
     "autoprefixer": "^6.4.1",
@@ -32,6 +33,7 @@
     "eslint": "^3.4.0",
     "eslint-plugin-react": "^6.2.0",
     "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
     "html-webpack-plugin": "^2.22.0",
     "less": "^2.7.1",
     "less-loader": "^2.2.3",
@@ -39,6 +41,7 @@
     "postcss-loader": "^0.11.1",
     "react-hot-loader": "^3.0.0-beta.3",
     "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
     "webpack": "^1.13.2",
     "webpack-dev-server": "^1.15.1"
   },
@@ -51,6 +54,9 @@
       "stage-0",
       "stage-1",
       "react"
+    ],
+    "plugins": [
+      "react-hot-loader/babel"
     ]
   },
   "eslintConfig": {
