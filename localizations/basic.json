@@ -13,8 +13,8 @@
   "%currencyCalc.Description3": "Also in this app you can see api requests to third-party services, localization, responsive design, FLIP animation.",
   "%currencyCalc.TaskLink": "Task specification (in Russian)",
 
-  "%todo.Description": "Todo app that was insired by GTD. I use it for my own projects.",
-  "%todo.Description2": "There were used a range of technologies for making this app nice looking and useful. React, Redux, React-Router, React DnD, React Motion, Draft.js, Firebase.",
+  "%todo.Description": "Todo app that was inspired by GTD. I use it for my own projects.",
+  "%todo.Description2": "There were used a range of technologies for making this app nice and useful. React, Redux, React-Router, React DnD, React Motion, Draft.js, Firebase.",
   "%todo.MaxSite.Title": "If you like design of this app, ",
   "%todo.MaxSite.Link": "there's an author"
 }
